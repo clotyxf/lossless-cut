@@ -162,14 +162,14 @@ function getPerStreamFlags({ stream, outputIndex, outFormat, manuallyCopyDisposi
     } else if (outFormat === 'flac' && areWeCutting && stream.codec_name === 'flac') { // https://github.com/mifi/lossless-cut/issues/1809
       addCodecArgs('flac'); // lossless because flac is a lossless codec
     } else {
-      addCodecArgs('copy');
+      addCodecArgs('aac');
     }
   } else if (stream.codec_type === 'video') {
     const videoArgs = getVideoArgs({ streamIndex: stream.index, outputIndex });
     if (videoArgs) {
       args = [...videoArgs];
     } else {
-      addCodecArgs('copy');
+      addCodecArgs('libx264');
     }
 
     if (isMov(outFormat)) {

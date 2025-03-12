@@ -21,6 +21,7 @@ The main feature is lossless trimming and cutting of video and audio files, whic
 
 ## Table of contents
 
+- [Building](#building)
 - [Features](#features)
 - [Example lossless use cases](#example-lossless-use-cases)
 - [Download](#download)
@@ -29,6 +30,22 @@ The main feature is lossless trimming and cutting of video and audio files, whic
 - [Video demos](#video-demos)
 - [Featured](#featured)
 - [Attributions](#attributions)
+
+
+## Building
+
+```bash
+# visit: https://github.com/mifi/lossless-cut/issues/1778
+
+yarn install
+yarn build
+yarn download-ffmpeg-linux-x64
+yarn run
+yarn start
+
+# pack-win
+yarn pack-win
+```
 
 ## Features
 

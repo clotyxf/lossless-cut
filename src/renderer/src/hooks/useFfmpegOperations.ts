@@ -277,10 +277,9 @@ function useFfmpegOperations({ filePath, treatInputFileModifiedTimeAsStart, trea
     let cutToArgs = [];
     let avoidNegativeTsArgs = [];
     let filterAudioArgs = [];
-    console.log(preserveMute, cuttingStart, cuttingEnd)
-    console.log('aaaaaaaaa')
+
     // only fragment mute
-    if (preserveMute && cuttingStart && cuttingEnd) {
+    if (preserveMute && cuttingEnd) {
       filterAudioArgs = ['-filter:a', `volume=0:enable='between(t,${cutFromWithAdjustment.toFixed(5)},${cutDuration.toFixed(5)})'`];
     } else {
       // Don't cut if no need: https://github.com/mifi/lossless-cut/issues/50

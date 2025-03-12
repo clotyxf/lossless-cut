@@ -439,7 +439,7 @@ function ExportConfirm({
 
                     <tr>
                       <td>
-                        {t('Fragment mute')}
+                        {t('Single fragment mute')}
                       </td>
                       <td>
                         <Switch checked={preserveMute} onCheckedChange={togglePreserveMute} />

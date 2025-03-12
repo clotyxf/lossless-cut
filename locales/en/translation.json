@@ -533,6 +533,7 @@
     "Preserve all MOV/MP4 metadata tags (e.g. EXIF, GPS position etc.) from source file? Note that some players have trouble playing back files where all metadata is preserved, like iTunes and other Apple software": "Preserve all MOV/MP4 metadata tags (e.g. EXIF, GPS position etc.) from source file? Note that some players have trouble playing back files where all metadata is preserved, like iTunes and other Apple software.",
     "Preserve all MP4/MOV metadata?": "Preserve all MP4/MOV metadata",
     "Preserve chapters": "Preserve chapters",
+    "Single fragment mute": "Single fragment mute",
     "Preserve metadata": "Preserve metadata",
     "Preserve original metadata when merging? (slow)": "Preserve original metadata when merging (slow)",
     "Press confirm to grant LosslessCut access to write the project file (due to App Sandbox restrictions).": "Press confirm to grant LosslessCut access to write the project file (due to App Sandbox restrictions).",

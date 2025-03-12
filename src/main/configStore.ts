@@ -111,6 +111,7 @@ const defaults: Config = {
   language: undefined,
   ffmpegExperimental: false,
   preserveChapters: true,
+  preserveMute: false,
   preserveMetadata: 'default',
   preserveMetadataOnMerge: false,
   preserveMovData: false,

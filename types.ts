@@ -68,6 +68,7 @@ export interface Config {
   language: LanguageKey | undefined,
   ffmpegExperimental: boolean,
   preserveChapters: boolean,
+  preserveMute: boolean,
   preserveMetadata: PreserveMetadata,
   preserveMetadataOnMerge: boolean,
   preserveMovData: boolean,

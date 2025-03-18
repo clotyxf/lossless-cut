@@ -55,6 +55,8 @@ export default () => {
   useEffect(() => safeSetConfig({ preserveMovData }), [preserveMovData]);
   const [preserveChapters, setPreserveChapters] = useState(safeGetConfigInitial('preserveChapters'));
   useEffect(() => safeSetConfig({ preserveChapters }), [preserveChapters]);
+  const [preserveMute, setPreserveMute] = useState(safeGetConfigInitial('preserveMute'));
+  useEffect(() => safeSetConfig({ preserveMute }), [preserveMute]);
   const [movFastStart, setMovFastStart] = useState(safeGetConfigInitial('movFastStart'));
   useEffect(() => safeSetConfig({ movFastStart }), [movFastStart]);
   const [avoidNegativeTs, setAvoidNegativeTs] = useState(safeGetConfigInitial('avoidNegativeTs'));
@@ -196,6 +198,8 @@ export default () => {
     setPreserveMovData,
     preserveChapters,
     setPreserveChapters,
+    preserveMute,
+    setPreserveMute,
     movFastStart,
     setMovFastStart,
     avoidNegativeTs,
